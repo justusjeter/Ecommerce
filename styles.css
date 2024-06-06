@@ -194,14 +194,21 @@ body, html {
 
 /* Footer Style */
 footer {
-    background-color: #0a3d3f;
+    background-color: #000000;
     color: white;
     padding: 2px 0; /* Reduce padding */
     text-align: left;
-    font-size: 12px; /* Reduce font size */
+    font-size: 12px;
+    position:relative;
+    height: 180px;
+    clear: both;
+    margin-top: 250px;
+    width: 100%; /* Reduce font size */
 }
 
 .footer-container {
+    height: 15em;
+    bottom: 0;
     max-width: 100%;
     margin: 0 auto;
     padding: 1px; /* Reduce padding */
@@ -289,7 +296,7 @@ footer {
 }
 
 .footer-bottom {
-    border-top: 1px solid #555;
+    border-top: 1px solid #504c4c;
     padding-top: 10px; /* Reduce padding */
     margin-top: 10px; /* Reduce margin */
     text-align: center;

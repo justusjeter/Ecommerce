@@ -45,13 +45,12 @@ body, html {
 /* home omo facts under here */
 #omofacts {
     display: flex;
-    height:100%;
     color: white;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     opacity: 0;
-    animation: fade-in-fwd 5.3s ease-in forwards
+    animation: fade-in-fwd 6s ease-in forwards;
 }
 
  @-webkit-keyframes fade-in-fwd {
@@ -79,15 +78,16 @@ body, html {
     }
   }
   
+.omoest {
+    display: flex;
+    flex-direction: column;
+    margin-top:75px;
+}
 
 #omofacts p {
-    display: flex;
     text-align: center;
 }
 
-.omoest {
-    margin-top: 160px;
-}
 /* Footer Style */
 footer {
     text-align: center;
@@ -100,13 +100,37 @@ footer {
 
 /* Media query for smaller devices */
 @media (min-width: 600px) {
-    
-    }
 
     #omofacts p {
         font-size: 1rem; /* Adjust the size for "est.2024" */
         right: -30px; /* Adjust position for smaller devices */
         width:66%;
-        margin: auto;
+        margin:auto;
     
     }
+
+    .navigation {
+
+    }
+}
+/* ----------General-------------- */
+
+
+
+
+
+
+/* ----------Shopping cart-------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------Checkout-------------- */

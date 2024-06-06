@@ -1,0 +1,118 @@
+/* this is to ensure the body and html take up the full height */
+body, html {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+/* Navigation styling */
+.navigation {
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+.navigation nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* This is the where home.html starts */
+#home1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-style: oblique;
+    font-size: xx-large;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards; /* Adds the fade-in animation */
+}
+
+#home1 .est {
+    font-size: small; /* Adjust the size for "est.2024" */
+    bottom: 0;
+    right: -80px; /* Adjust this value to position it correctly */
+    transform: translateX(-50%);
+}
+
+@keyframes fadeIn{
+    to {
+        opacity: 1;
+    }
+}
+/* home omo facts under here */
+#omofacts {
+    display: flex;
+    height:100%;
+    color: white;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    animation: fade-in-fwd 5.3s ease-in forwards
+}
+
+ @-webkit-keyframes fade-in-fwd {
+    0% {
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-fwd {
+    0% {
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  
+
+#omofacts p {
+    display: flex;
+    text-align: center;
+    max-width: 20%;
+}
+
+.omoest {
+    margin-top: 160px;
+}
+/* Footer Style */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000000;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media query for smaller devices */
+@media (min-width: 600px) {
+    .omoest {
+        font-size: 1rem; /* Adjust the text size for smaller devices */
+    
+    }
+
+    #omofacts p {
+        font-size: 1rem; /* Adjust the size for "est.2024" */
+        right: -30px; /* Adjust position for smaller devices */
+    
+    }
+
+    .navigation nav a {
+       
+    }
+}

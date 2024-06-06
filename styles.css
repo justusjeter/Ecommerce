@@ -1,5 +1,5 @@
 /* This is the navigation bar style section */
-#navigation {
+.navigation {
     position: fixed;
     top: 0;
     left: 0;

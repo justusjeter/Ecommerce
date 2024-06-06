@@ -17,6 +17,7 @@
         border: none;
         text-transform: capitalize;
         transition: all 0.2s linear;
+        color: black;
     }
 
     body {
@@ -130,7 +131,7 @@
             margin: 10px 0;
         }
     }
-    table {
+    .shop-table {
       width: 250px;
     }
     .total {
@@ -139,11 +140,25 @@
     </style>
 </head>
 <body>
+  <div class="navigation">
+    <nav>
+      <div class="menu-icon" id="menu-icon">
+        <span>&#9776;</span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="productlisting.html">Products</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="shoppingcart.html">Shopping Cart</a></li>
+       </ul> 
+    </nav>
+</div>
+
 <div class="container">
     <div class="checkout-cards">
         <div class="cart-preview">
-            <h3 class="title">Shopping Cart</h3><hr>
-            <div><table >
+            <h3 class="title">Shopping Cart</h3>
+            <table id="shop-table">
               <th>Items</th>
               <th>Price</th>
                 <tr>
@@ -178,7 +193,7 @@
                     <td><i><b>$320</b></i></td>
                     <td></td>
                   </tr>
-                </table></div>
+                </table>
 
         </div>
         <form action="">
@@ -245,6 +260,62 @@
             <input type="submit" value="Proceed to Checkout" class="submit-btn">
         </form>
     </div>
+    <footer>
+      <div class="footer-container">
+          <div class="footer-links">
+              <div class="footer-column">
+                  <h3>Company</h3>
+                  <ul>
+                      <li><a href="#">Careers</a></li>
+                      <li><a href="#">Our Store</a></li>
+                      <li><a href="#">Stiegler News</a></li>
+                      <li><a href="#">Featured</a></li>
+                  </ul>
+              </div>
+              <div class="footer-column">
+                  <h3>Support</h3>
+                  <ul>
+                      <li><a href="#">Costumer Support</a></li>
+                      <li><a href="#">Alumni</a></li>
+                      <li><a href="#">FAQ</a></li>
+                  </ul>
+              </div>
+              <div class="footer-column">
+                  <h3>Newsletter</h3>
+                  <form>
+                      <input type="email" placeholder="Your email here">
+                      <button type="submit">Subscribe</button>
+                      <div class="consent">
+                          <input type="checkbox" id="age-consent">
+                          <label for="age-consent">By checking the box, you agree that you are at least 16 years of age.</label>
+                      </div>
+                  </form>
+              </div>
+              <div class="footer-column">
+                  <h3>Follow Us</h3>
+                  <div class="social-icons">
+                      <a href="#"><img src="/Ecommerce/images/5296499_fb_facebook_facebook logo_icon.png" alt="Facebook"></a>
+                      <a href="#"><img src="/Ecommerce/images/5296514_bird_tweet_twitter_twitter logo_icon.png" alt="Twitter"></a>
+                      <a href="#"><img src="/Ecommerce/images/5296765_camera_instagram_instagram logo_icon.png" alt="Instagram"></a>
+                      <a href="#"><img src="/Ecommerce/images/5296503_inspiration_pin_pinned_pinterest_social network_icon.png" alt="Pinterest"></a>
+                      <a href="#"><img src="/Ecommerce/images/5296521_play_video_vlog_youtube_youtube logo_icon.png" alt="YouTube"></a>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <ul class="legal-links">
+                  <li><a href="#">Website Terms</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Accessibility Statement</a></li>
+                  <li><a href="#">Transparency in Supply Chains Act</a></li>
+                  <li><a href="#">Supplier Code of Conduct</a></li>
+                  <li><a href="#">Do Not Sell My Information</a></li>
+              </ul>
+              <p>&copy; 2024 StieglerEdtech. All rights reserved.</p>
+          </div>
+      </div>
+  </footer>  
 </div>
+
 </body>
 </html>

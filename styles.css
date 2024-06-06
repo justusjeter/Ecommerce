@@ -83,7 +83,6 @@ body, html {
 #omofacts p {
     display: flex;
     text-align: center;
-    max-width: 20%;
 }
 
 .omoest {
@@ -101,18 +100,13 @@ footer {
 
 /* Media query for smaller devices */
 @media (min-width: 600px) {
-    .omoest {
-        font-size: 1rem; /* Adjust the text size for smaller devices */
     
     }
 
     #omofacts p {
         font-size: 1rem; /* Adjust the size for "est.2024" */
         right: -30px; /* Adjust position for smaller devices */
+        width:66%;
+        margin: auto;
     
     }
-
-    .navigation nav a {
-       
-    }
-}

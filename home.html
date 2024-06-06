@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <title>OMO Home Page</title>
 </head>
 <body>
-<div class="navigation">
+    <!-----Navigation bar------>
+<div id="navigation">
     <nav>
-        <a href="home.html">Home</a>
-        <a href="productlisting.html">Products</a>
-        <a href="checkout.html">Checkout</a>
-        <a href="shoppingcart.html">Shopping Cart</a>
+      <div class="menu-icon" id="menu-icon">
+        <span>&#9776;</span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="productlisting.html">Products</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="shoppingcart.html">Shopping Cart</a></li>
+       </ul> 
     </nav>
-    <script src="script.js"></script>
 </div>
-<!-------->
+<!----Center of Homepage---->
 <div class="omoest">
  <div id="home1">
     <h1>OMO<span class="est">est.2024</span></h1>
@@ -39,9 +45,61 @@
         for all."</p>
   </div>
 </div>
-<!------------->
+<!-----Footer section-------->
 <footer>
-    <p>2024 OMO. All rights reserved.</p>
+    <div class="footer-container">
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Our Store</a></li>
+                    <li><a href="#">OMO News</a></li>
+                    <li><a href="#">Featured</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Costumer Support</a></li>
+                    <li><a href="#">Alumni</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Your email here">
+                    <button type="submit">Subscribe</button>
+                    <div class="consent">
+                        <input type="checkbox" id="age-consent">
+                        <label for="age-consent">By checking the box, you agree that you are at least 16 years of age.</label>
+                    </div>
+                </form>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="pinterest-icon.png" alt="Pinterest"></a>
+                    <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <ul class="legal-links">
+                <li><a href="#">Website Terms</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Accessibility Statement</a></li>
+                <li><a href="#">Transparency in Supply Chains Act</a></li>
+                <li><a href="#">Supplier Code of Conduct</a></li>
+                <li><a href="#">Do Not Sell My Information</a></li>
+            </ul>
+            <p>&copy; 2024 OMO. All rights reserved.</p>
+        </div>
+    </div>
 </footer>
 
 </body>

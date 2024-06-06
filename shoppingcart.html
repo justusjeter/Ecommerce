@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Shopping Cart</title>
+</head>
+<style>
+   *{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+   }
+   h1{
+    color: white;
+    margin-top: 20px;
+   }
+   body{
+    font-family: montserrat;
+    background-color: black;
+   }
+   .wrapper{
+    max-width: 1000px;
+    margin:1px auto;
+   }
+   .wrapper h1{
+    padding:30px 0;
+    text-transform: uppercase
+   }
+   .project{
+    display:flex
+   }
+   .shop{
+    flex:75%;
+   }
+   .box{
+    display: flex;
+    width:100%;
+    height:200px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: #d3ad7f;
+    transition: all .6s ease;
+    box-shadow: white 0 7px 29px 0;
+   }
+   .box:hover{
+    transform: scale(1.05);
+   }
+   .content{
+    padding: 20px;
+    position: relative;
+    width: 100%
+   }
+   .content h3{
+    margin-bottom:20px;
+   }
+   .content h4{
+    margin-bottom: 60;
+   }
+   .btn-area{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 25px;
+    background-color:teal;
+    cursor:pointer;
+    border-radius: 10px;
+    font-weight:600;
+   }
+   .btn-area:hover{
+     background-color: darkgoldenrod;
+   }
+   .unit input{
+    width: 50px;
+    padding: 8px;
+    text-align: center;
+   }
+ .Right-bar {
+    border: solid white;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: white 0 7px 29px 0;
+ }
+   .Right-bar hr{
+    margin-bottom: 2px;
+   }
+   .Right-bar p{
+    display:flex; 
+    justify-content: space-between;
+    justify-content: center;
+    margin-bottom:10px;
+   }
+.side{
+    position:center;
+    bottom: 2px;
+    right: 10px;
+    padding: 10px 25px;
+    background-color:teal;
+    cursor:pointer;
+    padding: 10px 25px;
+    font-weight:800;
+}
+.side:hover{
+     background-color:darkgoldenrod;
+}
+@media only screen and (max-width: 768px) {
+        .Project {
+            flex-direction: column; 
+        }
+        .box {
+            width: 100%; 
+            margin-right: 0;
+        }
+}
+
+
+</style>
+<body>
+    <div class="navigation">
+        <nav>
+          <div class="menu-icon" id="menu-icon">
+            <span>&#9776;</span>
+          </div>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="productlisting.html">Products</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="shoppingcart.html">Shopping Cart</a></li>
+           </ul> 
+        </nav>
+    </div>
+<div class="flex"> 
+    <div class="wrapper">
+        <h1>My Shopping Items</color:white></h1>
+        <div class="Project">
+            <div class="shop">
+                <div class="box">
+                    <img src="images/off the wall.jpeg" alt="Micheal Jackson" width="200" height="200">
+                    <div class="content">
+                        <h3> Off The Wall</h3>
+                        <h4>Price: $50</h4>  
+                        <p class="unit">Quantity: <input value="1"></p>
+                        <p class="btn-area">
+                            <i class="fa fa-trash"></i>
+                            <span class="btn2">Remove</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="Project">
+        <div class="shop">
+            <div class="box">
+                <img src="images/davidbowie-heroes_1800x.webp" alt="David Bowie album" width="200" height="200">
+                <div class="content">
+                    <h3> David Bowie Heroes</h3>
+                    <h4>Price: $90</h4>  
+                    <p class="unit">Quantity: <input value="2"></p>
+                    <p class="btn-area">
+                        <i class="fa fa-trash"></i>
+                        <span class="btn2">Remove</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Project">
+        <div class="shop">
+            <div class="box">
+                <img src="images/TheMiseducationofLaurynHillVinyl_1800x.webp" alt="Stevie Wonder album" width="200" height="200">
+                <div class="content">
+                    <h3> The Miseducation of Lauryn Hill</h3>
+                    <h4>Price: $60</h4>  
+                    <p class="unit">Quantity: <input value="1"></p>
+                    <p class="btn-area">
+                        <i class="fa fa-trash"></i>
+                        <span class="btn2">Remove</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="Right-bar">
+        <p><span><b>Subtotal</b></span></p> <p><span>$290</span></P>
+        <hr>
+        <p><span>Tax (7%)</span></p> <p><span>$20</span></P>
+        <hr>
+        <p><span>Shipping</span></p> <p><span>$10</span></P>
+        <hr>
+        <p><span>Total</span></p> <p><span>$320</span></P>
+        <p class="side"><span>Checkout Time</span></p>
+    </div>
+</div>
+<footer>
+    <div class="footer-container">
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Our Store</a></li>
+                    <li><a href="#">Stiegler News</a></li>
+                    <li><a href="#">Featured</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Costumer Support</a></li>
+                    <li><a href="#">Alumni</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Your email here">
+                    <button type="submit">Subscribe</button>
+                    <div class="consent">
+                        <input type="checkbox" id="age-consent">
+                        <label for="age-consent">By checking the box, you agree that you are at least 16 years of age.</label>
+                    </div>
+                </form>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="/Ecommerce/images/5296499_fb_facebook_facebook logo_icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="/Ecommerce/images/5296514_bird_tweet_twitter_twitter logo_icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="/Ecommerce/images/5296765_camera_instagram_instagram logo_icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="/Ecommerce/images/5296503_inspiration_pin_pinned_pinterest_social network_icon.png" alt="Pinterest"></a>
+                    <a href="#"><img src="/Ecommerce/images/5296521_play_video_vlog_youtube_youtube logo_icon.png" alt="YouTube"></a>
+                </div>
+            </div>
+        </div> 
+        <div class="footer-bottom">
+            <ul class="legal-links">
+                <li><a href="#">Website Terms</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Accessibility Statement</a></li>
+                <li><a href="#">Transparency in Supply Chains Act</a></li>
+                <li><a href="#">Supplier Code of Conduct</a></li>
+                <li><a href="#">Do Not Sell My Information</a></li>
+            </ul>
+            <p>&copy; 2024 StieglerEdtech. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -18,10 +18,10 @@
         outline: none;
         border: none;
         text-transform: capitalize;
-        color: black;
+        color: white;
     }
     #checkout {
-        background: linear-gradient(90deg, rgba(0, 128, 128, 0.633) 60%, #d3ad7f 40.1%);
+        background: linear-gradient(90deg, gray 60%, white 40.1%);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -56,13 +56,13 @@
         width: 100%;
         max-width: 700px;
         padding: 12px;
-        background: #fff;
+        background: black;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     }
 
     .title {
         font-size: 20px;
-        color: #333;
+        color: white;
         padding-bottom: 5px;
         text-transform: uppercase;
     }
@@ -113,15 +113,15 @@
         width: 100%;
         padding: 12px;
         font-size: 17px;
-        background: rgba(0, 0, 0, 0.114);
-        color: black;
+        background: gray;
+        color: white;
         margin-top: 5px;
         cursor: pointer;
     }
 
     .submit-btn:hover {
-        background: rgba(0, 0, 0, 0.808);
-        color: #fff;
+        background: gray;
+        color: #ffc400;
     }
 
     @media (max-width: 768px) {
@@ -152,14 +152,14 @@
 <body id="checkout">
   <div class="navigation">
     <nav>
-      <div class="menu-icon" id="menu-icon">
-        <span style="color: white;">&#9776;</span>
-    </div>
-          <ul class="nav-links" id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="productlisting.html">Products</a></li>
-        <li><a href="shoppingcart.html">Shopping Cart</a></li>
-        <li><a href="checkout.html">Checkout</a></li>
+        <div class="menu-icon" id="menu-icon">
+            <span style="color: white;">&#9776;</span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productlisting.html">Products</a></li>
+            <li><a href="shoppingcart.html">Shopping Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
        </ul> 
     </nav>
 </div>
@@ -267,7 +267,7 @@
                     </div>
                 </div>
             </div>
-            <input type="submit" value="Proceed to Checkout" class="submit-btn">
+            <input type="submit" value="Confirm Order" class="submit-btn">
         </form>
     </div>
     <footer>

@@ -472,12 +472,17 @@ footer {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
  }
  .producttext{
     display: flex;
     justify-content: right;
     line-height: 1.6;
     text-align: center;
+    margin: 0 auto;
  }
  .productpageframe {
     display: flex;
@@ -488,3 +493,17 @@ footer {
     gap: 40px;
     max-width: 1400px;
  } 
+ .btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid white;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background:  rgb(0, 0, 0); 
+}

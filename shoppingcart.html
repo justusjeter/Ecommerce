@@ -17,6 +17,21 @@
     color: white;
     margin-top: 20px;
    }
+   @keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#shopping-cart {
+  animation: fadeInOut 3s infinite; /* Change the animation duration as needed */
+}
    body{
     font-family: montserrat;
     background-color: black;
@@ -133,7 +148,7 @@
     </div>
 <div class="flex"> 
     <div class="wrapper">
-        <h1>My Shopping Items</color:white></h1>
+        <h1 id="shopping-cart">My Shopping Items</color:white></h1>
         <div class="Project">
             <div class="shop">
                 <div class="box">
